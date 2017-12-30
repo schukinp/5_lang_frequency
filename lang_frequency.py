@@ -10,7 +10,7 @@ def load_data():
 
 def get_most_frequent_words():
     for word, count in Counter(load_data()).most_common(10):
-        print('Слово: {} Количество повторений: {}'.format(word, count))
+        print('Слово: '"'{}'"' | Количество повторений: {}'.format(word, count))
 
 
 if __name__ == '__main__':
