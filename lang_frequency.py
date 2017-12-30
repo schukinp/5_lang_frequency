@@ -6,8 +6,8 @@ def load_data(filepath):
         return text.read().split()
 
 
-def get_most_frequent_words(filepath, n):
-    for word, count in Counter(load_data(filepath)).most_common(n):
+def get_most_frequent_words(filepath, number):
+    for word, count in Counter(load_data(filepath)).most_common(number):
         print('Word: '"'{}'"' | Frequency: {}'.format(word, count))
 
 

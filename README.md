@@ -12,7 +12,7 @@ The script requires at least Python 3.5
 
 To run the code open get_most_frequent_words.py and fill in parameters:
         filepath: path to your file including file extension
-        n: number of most frequent words to print
+        number: number of most frequent words to print
 
 Linux:
 ```bash
