@@ -1,6 +1,6 @@
 # Frequency Analysis of Words
 
-[TODO. There will be project description]
+Script searches for file in 'data' directory and prints most frequently 10 used words
 
 # Project Goals
 
