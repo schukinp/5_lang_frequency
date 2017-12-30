@@ -11,12 +11,12 @@ The code is written for educational purposes. Training course for web-developers
 The script requires at least Python 3.5
 
 To run the code open get_most_frequent_words.py and fill in parameters:
-filepath: path to your file including file extension
-n: number of most frequent words to print
+        filepath: path to your file including file extension
+        n: number of most frequent words to print
 
 Linux:
 ```bash
-$ python lang_frequency.py # possibly requires call of python3 executive instead of just python
+$ python get_most_frequent_words.py # possibly requires call of python3 executive instead of just python
         Most frequent words are:
         Word: 'a' | Frequency: 10
         Word: 'the' | Frequency: 6
