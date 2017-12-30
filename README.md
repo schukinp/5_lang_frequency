@@ -1,6 +1,6 @@
 # Frequency Analysis of Words
 
-Script searches for file in 'data' directory and prints most frequently 10 used words
+Script prints most frequently used words
 
 # Project Goals
 
@@ -8,23 +8,25 @@ The code is written for educational purposes. Training course for web-developers
 
 # How to start:
 
-Create 'data' folder and download there your text file
-
 The script requires at least Python 3.5
+
+To run the code open get_most_frequent_words.py and fill in parameters:
+filepath: path to your file including file extension
+n: number of most frequent words to print
 
 Linux:
 ```bash
 $ python lang_frequency.py # possibly requires call of python3 executive instead of just python
-        Часто повторяющиеся слова
-        Слово: 'и' | Количество повторений: 3
-        Слово: 'Когда' | Количество повторений: 2
-        Слово: 'не' | Количество повторений: 2
-        Слово: 'Мой' | Количество повторений: 1
-        Слово: 'дядя' | Количество повторений: 1
-        Слово: 'самых' | Количество повторений: 1
-        Слово: 'честных' | Количество повторений: 1
-        Слово: 'правил,' | Количество повторений: 1
-        Слово: 'в' | Количество повторений: 1
-        Слово: 'шутку' | Количество повторений: 1
+        Most frequent words are:
+        Word: 'a' | Frequency: 10
+        Word: 'the' | Frequency: 6
+        Word: 'I' | Frequency: 6
+        Word: 'or' | Frequency: 4
+        Word: 'in' | Frequency: 3
+        Word: 'not' | Frequency: 3
+        Word: 'my' | Frequency: 3
+        Word: 'Is' | Frequency: 3
+        Word: 'within' | Frequency: 3
+        Word: 'from' | Frequency: 2
         ```
 Windows starts the same way
