@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frequency Analysis of Words
 
 Script prints the most frequently used words in a text file
@@ -12,8 +13,8 @@ The script requires at least Python 3.5
 
 #### To run the code:
 
-* Put your text file in script folder
-* Run lang_frequency.py --file `file name.extension` -n `number of words you want to display`
+* Put your file into root script folder
+* Run lang_frequency.py --file 'file name.extension' -n 'number of words you want to display'
 
 
 Linux:
@@ -32,3 +33,4 @@ Most common words are (word, times):
 ('is', 3)
 ```
 Windows starts the same way
+

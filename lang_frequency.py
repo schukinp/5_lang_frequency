@@ -2,25 +2,32 @@ from collections import Counter
 import re
 import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-file')
-parser.add_argument('-n', type=int)
-args = parser.parse_args()
+
+def parser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--file')
+    parser.add_argument('-n', type=int)
+    args = parser.parse_args()
+    return args
 
 
-def load_data():
-    with open(args.file, 'r') as file:
+def load_data(filepath):
+    with open(filepath, 'r') as file:
         return file.read().lower()
 
 
-def get_words():
-    return re.findall('(?=\D)\w+', load_data())
+def get_words(filepath):
+    return re.findall('(?=\D)\w+', load_data(filepath))
 
 
-def get_most_frequent_words():
-    return Counter(get_words()).most_common(args.n)
+def get_most_frequent_words(filepath, n):
+    return Counter(get_words(filepath)).most_common(n)
 
 
 if __name__ == '__main__':
+    filepath = parser().file
+    n = parser().n
     print('Most common words are (word, times):')
-    print(*get_most_frequent_words(), sep='\n')
+    print(*get_most_frequent_words(filepath, n), sep='\n')
+
+
