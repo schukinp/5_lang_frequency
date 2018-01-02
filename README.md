@@ -10,11 +10,11 @@ The code is written for educational purposes. Training course for web-developers
 
 The script requires at least Python 3.5
 
-To run the code:
+#### To run the code:
 
-Run lang_frequency.py  
-Enter path to the text file  
-Enter the number of the most frequent words to display
+* Run lang_frequency.py  
+* Enter path to the text file  
+* Enter the number of the most frequent words to display
 
 Linux:
 ```
