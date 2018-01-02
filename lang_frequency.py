@@ -7,8 +7,7 @@ def parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--file')
     parser.add_argument('-n', type=int)
-    args = parser.parse_args()
-    return args
+    return parser.parse_args()
 
 
 def load_data(filepath):
