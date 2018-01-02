@@ -12,36 +12,23 @@ The script requires at least Python 3.5
 
 #### To run the code:
 
-<<<<<<< HEAD
-Run lang_frequency.py
+* Put your file into root script folder
+* Run lang_frequency.py -file 'file name.extension' -n 'number of words you want to display'
 
-Enter path to the text file
-
-Enter the number of the most frequent words to display
-=======
-* Run lang_frequency.py  
-* Enter path to the text file  
-* Enter the number of the most frequent words to display
->>>>>>> 07230d8960207aec8e87df5eb81979d0b6f167ab
 
 Linux:
 ```
-$ python lang_frequency.py 
-
-Enter path to file (e.g. c:/path/file.txt): c:/root/text.txt
-
-Enter number of most common words to display: 10
-
+$ python lang_frequency.py -file poem.txt -n 10
 Most common words are (word, times):
-'a' 10
-'the' 6
-'i' 6
-'in' 5
-'dream' 5
-'or' 4
-'not' 3
-'that' 3
-'my' 3
-'is' 3
+('a', 10)
+('the', 6)
+('i', 6)
+('in', 5)
+('dream', 5)
+('or', 4)
+('not', 3)
+('that', 3)
+('my', 3)
+('is', 3)
 ```
 Windows starts the same way
