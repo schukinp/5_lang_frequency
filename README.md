@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Frequency Analysis of Words
 
 Script prints the most frequently used words in a text file
