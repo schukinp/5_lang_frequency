@@ -13,7 +13,7 @@ The script requires at least Python 3.5
 #### To run the code:
 
 * Put your file into root script folder
-* Run lang_frequency.py -file 'file name.extension' -n 'number of words you want to display'
+* Run lang_frequency.py -file `file name.extension` -n `number of words you want to display`
 
 
 Linux:
