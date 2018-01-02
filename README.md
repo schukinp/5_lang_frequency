@@ -12,12 +12,12 @@ The script requires at least Python 3.5
 
 To run the code:
 
-Run lang_frequency.py
-Enter path to the text file
+Run lang_frequency.py  
+Enter path to the text file  
 Enter the number of the most frequent words to display
 
 Linux:
-
+```
 $ python lang_frequency.py 
 
 Enter path to file (e.g. c:/path/file.txt): c:/root/text.txt
@@ -34,5 +34,5 @@ Most common words are (word, times):
 'that' 3
 'my' 3
 'is' 3
-
+```
 Windows starts the same way
