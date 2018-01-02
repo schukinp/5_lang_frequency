@@ -1,6 +1,6 @@
 # Frequency Analysis of Words
 
-Script prints most frequently used words
+Script prints the most frequently used words in a text file
 
 # Project Goals
 
@@ -10,23 +10,29 @@ The code is written for educational purposes. Training course for web-developers
 
 The script requires at least Python 3.5
 
-To run the code open get_most_frequent_words.py and fill in parameters:
-        filepath: path to your file including file extension
-        number: number of most frequent words to print
+To run the code:
+
+Run lang_frequency.py
+Enter path to the text file
+Enter the number of the most frequent words to display
 
 Linux:
-```bash
-$ python get_most_frequent_words.py # possibly requires call of python3 executive instead of just python
-        Most frequent words are:
-        Word: 'a' | Frequency: 10
-        Word: 'the' | Frequency: 6
-        Word: 'I' | Frequency: 6
-        Word: 'or' | Frequency: 4
-        Word: 'in' | Frequency: 3
-        Word: 'not' | Frequency: 3
-        Word: 'my' | Frequency: 3
-        Word: 'Is' | Frequency: 3
-        Word: 'within' | Frequency: 3
-        Word: 'from' | Frequency: 2
-        ```
+
+$ python lang_frequency.py 
+
+Enter path to file (e.g. c:/path/file.txt): c:/root/text.txt
+Enter number of most common words to display: 10
+
+Most common words are (word, times):
+'a' 10
+'the' 6
+'i' 6
+'in' 5
+'dream' 5
+'or' 4
+'not' 3
+'that' 3
+'my' 3
+'is' 3
+
 Windows starts the same way
