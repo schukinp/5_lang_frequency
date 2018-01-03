@@ -16,8 +16,8 @@ def load_data(filepath):
         return file.read()
 
 
-def get_words(file):
-    return re.findall('(?=\D)\w+', file.lower())
+def get_words(loaded_data):
+    return re.findall('(?=\D)\w+', loaded_data.lower())
 
 
 def get_most_frequent_words(converted_file, word_num):
@@ -26,8 +26,8 @@ def get_most_frequent_words(converted_file, word_num):
 
 if __name__ == '__main__':
     filepath, word_num = get_arguments()
-    file = load_data(filepath)
-    converted_file = get_words(file)
+    loaded_data = load_data(filepath)
+    converted_file = get_words(loaded_data)
     print('Most common words are (word - times):')
     print('\n'.join('\'{}\' - {}'.format(word, count)
                     for word, count in get_most_frequent_words(converted_file, word_num)))
