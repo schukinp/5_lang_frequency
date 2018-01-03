@@ -19,17 +19,17 @@ The script requires at least Python 3.5
 Linux:
 ```
 $ python lang_frequency.py --file poem.txt --word_num 10
-Most common words are (word, times):
-('a', 10)
-('the', 6)
-('i', 6)
-('in', 5)
-('dream', 5)
-('or', 4)
-('not', 3)
-('that', 3)
-('my', 3)
-('is', 3)
+Most common words are (word - times):
+'a' - 10
+'the' - 6
+'i' - 6
+'in' - 5
+'dream' - 5
+'or' - 4
+'not' - 3
+'that' - 3
+'my' - 3
+'is' - 3
 ```
 Windows starts the same way
 
