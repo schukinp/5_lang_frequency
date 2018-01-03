@@ -3,12 +3,11 @@ import re
 import argparse
 
 
-def get_arguments():
+def create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--file')
     parser.add_argument('--word_num', type=int)
-    args = parser.parse_args()
-    return args.file, args.word_num
+    return parser.parse_args()
 
 
 def load_data(filepath):
@@ -16,20 +15,20 @@ def load_data(filepath):
         return file.read()
 
 
-def get_words(loaded_data):
-    return re.findall('(?=\D)\w+', loaded_data.lower())
+def get_words(text):
+    return re.findall('(?=\D)\w+', text.lower())
 
 
-def get_most_frequent_words(converted_file, word_num):
-    return Counter(converted_file).most_common(word_num)
+def get_most_frequent_words(word_list, word_num):
+    return Counter(word_list).most_common(word_num)
 
 
 if __name__ == '__main__':
-    filepath, word_num = get_arguments()
-    loaded_data = load_data(filepath)
-    converted_file = get_words(loaded_data)
+    args = create_parser()
+    text = load_data(args.file)
+    word_list = get_words(text)
     print('Most common words are (word - times):')
     print('\n'.join('\'{}\' - {}'.format(word, count)
-                    for word, count in get_most_frequent_words(converted_file, word_num)))
+                    for word, count in get_most_frequent_words(word_list, args.word_num)))
 
 
